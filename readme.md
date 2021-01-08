@@ -1,11 +1,11 @@
 ## Links
 #### selenium:
-[](https://pypi.org/project/selenium/)
-[](https://www.selenium.dev/)
-[](https://www.selenium.dev/documentation/en/)
-[](https://selenium-python.readthedocs.io/locating-elements.html#locating-hyperlinks-by-link-text)
-[](https://www.w3schools.com/tags/ref_attributes.asp)
-[](https://developer.mozilla.org/ru/docs/Web/API/Element/scrollIntoView)
+[pypi selenium](https://pypi.org/project/selenium/)
+[selenium](https://www.selenium.dev/)
+[selenium documentation](https://www.selenium.dev/documentation/en/)
+[locating-hyperlinks-by-link-text](https://selenium-python.readthedocs.io/locating-elements.html#locating-hyperlinks-by-link-text)
+[ref_attributes](https://www.w3schools.com/tags/ref_attributes.asp)
+[scrollIntoView](https://developer.mozilla.org/ru/docs/Web/API/Element/scrollIntoView)
 
 ## start
 ```
