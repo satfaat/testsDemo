@@ -33,3 +33,21 @@ pytest -s name.py
 pytest --log-level=LEVEL name.py
 ```
 
+## Node
+
+```
+node -v
+node start.js
+```
+### lib
+```
+npm -v
+npm install puppeteer
+npm install puppeteer-video-recorder
+```
+```nodejs
+const puppeteer = require('puppeteer');
+```
+### links
+[puppeteer-video-recorder](https://github.com/shaynet10/puppeteer-video-recorder) 
+
