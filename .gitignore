@@ -1,5 +1,7 @@
 # my folders
 wrk/
+.pytest_cache
+.vscode
 
 
 *.log

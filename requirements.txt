@@ -1,2 +1,6 @@
 selenium
 pytest
+robotframework
+robotframework-seleniumlibrary
+#pyresttest
+requests
