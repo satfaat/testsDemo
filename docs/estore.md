@@ -98,7 +98,7 @@ https://specialty.ru/coffee/kofe_zambia_balmoral_av/?offer=991
 3. Указать количество 10 шт. = 10кг.
 4. Указать количество 20 шт. = 20кг.
 5. Указать количество 29 шт. = 29кг.
-#### Option 2: от 30кг - 15% discount
+#### Option 3: от 30кг - 15% discount
 6. Указать количество 30 шт. = 30кг.
 7. Указать количество 35 шт. = 35кг.
 
@@ -115,7 +115,7 @@ https://specialty.ru/coffee/kofe_zambia_balmoral_av/?offer=991
 ##### 29 кг
 - скидка = 5394
 - Итоговая цена = 53940 - 5394 = 48546
-#### Option 2: от 30кг - 15% discount
+#### Option 3: от 30кг - 15% discount
 ##### 30кг
 - скидка = 8370
 - Итоговая цена = 55800 - 8370 = 47430
@@ -130,7 +130,7 @@ https://specialty.ru/coffee/kofe_zambia_balmoral_av/?offer=991
 #### Option 2: от 10 до 29кг - 10% discount
 - [] Passed
 - [x] Failed<br/>
-#### Option 2: от 30кг - 15% discount
+#### Option 3: от 30кг - 15% discount
 - [] Passed
 - [x] Failed<br/>
 

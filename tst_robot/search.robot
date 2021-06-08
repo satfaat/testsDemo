@@ -16,7 +16,7 @@ Checking search bar
     Confirm geolocation
     Input word for search
     Submit search
-    Serched product
+    Searched product
     [Teardown]  Close Browser
 
 *** Keywords ***
@@ -38,5 +38,5 @@ Submit search
     Click Button    css:.suggest-search__button
     Sleep   1s
 
-Serched product
+Searched product
     Element Text Should Be  css:.coffee-card__title     ${expected_text}
