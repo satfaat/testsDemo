@@ -2,6 +2,9 @@
 wrk/
 .pytest_cache
 .vscode
+tmp/
+screenshot/
+tmp_screenshot/
 
 
 *.log

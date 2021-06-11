@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 `edge://version/`
 
+pip install rpaframework --no-dependencies
+
 ## keyword
 xpath cheatsheet
 
@@ -50,6 +52,8 @@ const puppeteer = require('puppeteer');
 ```
 ### links
 - [puppeteer-video-recorder](https://github.com/shaynet10/puppeteer-video-recorder)
+- [deno](https://deno.land/manual)
+- [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 
 
 ## Robot
@@ -83,12 +87,27 @@ $ export ROBOT_SYSLOG_FILE=/tmp/syslog.txt
 - [docs](https://robocorp.com/docs/)
 - [lambdatest](https://www.lambdatest.com/blog/robot-framework-tutorial/)
 - [edureka](https://www.edureka.co/blog/robot-framework-tutorial/)
+- [robocorp docs](https://robocorp.com/docs/courses/implementing-rpa-robots/process-definition-document)
+- [libraries](https://robocorp.com/docs/libraries)
+- [robocorp portal](https://robocorp.com/portal/)
+- [robocorp locators](https://robocorp.com/docs/development-guide/browser/how-to-find-user-interface-elements-using-locators-in-web-applications)
+- [robocorp security](https://robocorp.com/docs/development-guide/variables-and-secrets/vault)
+- [for API](https://github.com/MarketSquare/robotframework-requests)
+- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
 #### libraries
 - [BuiltIn](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
 - [SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary)
 - [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 - [Locating](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Locating%20elements)
+- [RequestsLibrary](http://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html)
+- [rpaframework docs](https://rpaframework.org/)
+
+#### Other
+- [playwright](https://playwright.dev/python/docs/intro/)
+- [playwright](https://playwright.dev/)
+- [puppeteer](https://devdocs.io/puppeteer/)
+- [cypress](https://www.cypress.io/)
 
 
 ## Webdrive
