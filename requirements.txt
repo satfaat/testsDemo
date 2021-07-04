@@ -1,8 +1,11 @@
-#rpaframework
-selenium
-pytest
+rpaframework
+#selenium
+#pytest
 robotframework
-robotframework-seleniumlibrary
+#robotframework-seleniumlibrary
 robotframework-requests
 #pyresttest
 requests
+#playwright
+robotframework-browser
+#pytube

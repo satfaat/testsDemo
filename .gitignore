@@ -2,6 +2,8 @@
 wrk/
 .pytest_cache
 .vscode
+.devdata/
+.venv_mine/
 tmp/
 screenshot/
 tmp_screenshot/

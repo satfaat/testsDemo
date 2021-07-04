@@ -1,5 +1,5 @@
 ## Links
-#### selenium:
+#### selenium-old:
 - [pypi selenium](https://pypi.org/project/selenium/)
 - [selenium](https://www.selenium.dev/)
 - [selenium documentation](https://www.selenium.dev/documentation/en/)
@@ -9,12 +9,19 @@
 
 ## start
 ```
+python -m venv .venv
 cd D:\devgit\pytest
-.\.venv\Scripts\activate
+.\.venv\Scripts\activate  # win
 OR
-source d:/devgit/pytest/.venv/Scripts/activate
+source d:/devgit/pytest/.venv/Scripts/activate  #bash
 
 pip install -r requirements.txt
+```
+### Linux
+```
+sudo apt install virtualenv
+virtualenv -p python3 .venv
+source .venv/bin/activate
 ```
 
 ## end
@@ -70,6 +77,11 @@ robot QuickStart.rst
 pybot -d results tests/name.robot
 robot -d ../../.logs/robot tst.robot
 ```
+### BROWSER
+```
+pip install robotframework-browser
+rfbrowser init
+```
 
 ### Setting default options and syslog file before running tests.
 ```
@@ -94,8 +106,16 @@ $ export ROBOT_SYSLOG_FILE=/tmp/syslog.txt
 - [robocorp security](https://robocorp.com/docs/development-guide/variables-and-secrets/vault)
 - [for API](https://github.com/MarketSquare/robotframework-requests)
 - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- [robo + playwright](https://robocorp.com/docs/development-guide/browser/playwright)
+- [web-store-order](https://robocorp.com/docs/development-guide/browser/web-store-order-robot)
+- [robotframework-browser](https://github.com/MarketSquare/robotframework-browser#robotframework-browser)
+- [CI playwright](https://github.com/microsoft/playwright-github-action)
+- [ci playwright](https://playwright.dev/python/docs/ci/)
+- [github-actions-integration](https://robocorp.com/docs/development-guide/integrations/github-actions-integration)
+- [actions](https://github.com/features/actions)
 
 #### libraries
+- [robotframework-browser](https://robotframework-browser.org/)
 - [BuiltIn](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
 - [SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary)
 - [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
@@ -108,6 +128,7 @@ $ export ROBOT_SYSLOG_FILE=/tmp/syslog.txt
 - [playwright](https://playwright.dev/)
 - [puppeteer](https://devdocs.io/puppeteer/)
 - [cypress](https://www.cypress.io/)
+- [qweb_workshop](https://github.com/qentinelqi/qweb_workshop)
 
 
 ## Webdrive
@@ -142,4 +163,10 @@ pyresttest https://api.github.com examples/github_api_test.yaml --log debug
 
 ## Errors
 - [Raise an Exception](https://www.w3schools.com/python/gloss_python_raise.asp)
+
+
+## Jenkins
+```
+java -jar jenkins.war
+```
 
