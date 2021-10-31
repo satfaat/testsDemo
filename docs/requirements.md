@@ -1,0 +1,2 @@
+- UI, Add new column: what position? 
+- if not described: should we think that it should be done?
