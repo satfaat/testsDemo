@@ -22,3 +22,11 @@ footer:
         - name    
 ```
 
+## Structure
+
+- db first
+- ui
+- actions
+
+- auto
+- manual
