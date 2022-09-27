@@ -1,12 +1,3 @@
-## Links
-#### selenium-old:
-- [pypi selenium](https://pypi.org/project/selenium/)
-- [selenium](https://www.selenium.dev/)
-- [selenium documentation](https://www.selenium.dev/documentation/en/)
-- [locating-hyperlinks-by-link-text](https://selenium-python.readthedocs.io/locating-elements.html#locating-hyperlinks-by-link-text)
-- [ref_attributes](https://www.w3schools.com/tags/ref_attributes.asp)
-- [scrollIntoView](https://developer.mozilla.org/ru/docs/Web/API/Element/scrollIntoView)
-
 ## start
 ```
 python -m venv .venv
@@ -27,7 +18,7 @@ source .venv/bin/activate
 ## end
 `deactivate`
 
-`edge://version/`
+
 
 pip install rpaframework --no-dependencies
 
@@ -137,8 +128,6 @@ pip install webdrivermanager
 webdrivermanager firefox chrome --linkpath /usr/local/bin
 ```
 
-### links
--[driver_requirements](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/)
 
 ## API
 
@@ -169,4 +158,3 @@ pyresttest https://api.github.com examples/github_api_test.yaml --log debug
 ```
 java -jar jenkins.war
 ```
-
