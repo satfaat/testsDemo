@@ -7,6 +7,7 @@ wrk/
 tmp/
 screenshot/
 tmp_screenshot/
+.venv*
 
 
 *.log

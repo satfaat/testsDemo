@@ -30,3 +30,13 @@ footer:
 
 - auto
 - manual
+
+```json
+case = {
+    action:
+        check:
+            res_fail:{
+            }
+            res_passed:{}
+}
+```

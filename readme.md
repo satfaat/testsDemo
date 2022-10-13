@@ -1,3 +1,6 @@
+
+# prj.name = test.py
+
 ## Links
 #### selenium-old:
 - [pypi selenium](https://pypi.org/project/selenium/)
@@ -8,21 +11,31 @@
 - [scrollIntoView](https://developer.mozilla.org/ru/docs/Web/API/Element/scrollIntoView)
 
 ## start
-```
-python -m venv .venv
-cd D:\devgit\pytest
-.\.venv\Scripts\activate  # win
-OR
-source d:/devgit/pytest/.venv/Scripts/activate  #bash
+    ```bash
+    python -m venv .venv
+    cd D:\devgit\pytest
+    .\.venv\Scripts\activate  # win
+    # OR
+    source d:/devgit/pytest/.venv/Scripts/activate  # bash
+    
+    pip install -r requirements.txt
+    ```
+### Errors
+- [.ps1 cannot be loaded because running scripts is disabled on this system.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
 
-pip install -r requirements.txt
+```powershell
+Get-ExecutionPolicy
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser # recomended
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser # not secure
 ```
+
 ### Linux
-```
-sudo apt install virtualenv
-virtualenv -p python3 .venv
-source .venv/bin/activate
-```
+    ```bash
+    sudo apt install virtualenv
+    virtualenv -p python3 .venv
+    source .venv/bin/activate
+    ```
 
 ## end
 `deactivate`
@@ -35,14 +48,14 @@ pip install rpaframework --no-dependencies
 xpath cheatsheet
 
 # Pytest
-```
-pytest --help
-pytest -v name.py
-pytest -s name.py
-pytest --log-level=LEVEL name.py
-```
+    ```bash
+    pytest --help
+    pytest -v name.py
+    pytest -s name.py
+    pytest --log-level=LEVEL name.py
+    ```
 
-## Node
+## Node via volta
 
 ```
 node -v
@@ -139,6 +152,15 @@ webdrivermanager firefox chrome --linkpath /usr/local/bin
 
 ### links
 -[driver_requirements](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/)
+
+## UI testing
+### locator
+
+console: $x("xpath")
+ex.: 
+    - $x("html/body/div/div/header/img")
+    - $x("html/body/div/div/header/img[@alt='Логотип проекта Mesto']")
+    - $x(".//img")
 
 ## API
 
