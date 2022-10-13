@@ -8,6 +8,8 @@ tmp/
 screenshot/
 tmp_screenshot/
 .venv*
+.env*
+
 
 
 *.log

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20220813 13:42:04.796" rpa="false" schemaversion="3">
+<suite id="s1" name="Ex3" source="D:\dev\pytest\aka_playwright\robot\ex3.robot">
+<test id="s1-t1" name="Open page" line="6">
+<kw name="New Page" library="Browser">
+<arg>https://lps.alvexo.ae/discover-the-stock-test</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220813 13:42:09.484" level="INFO">Successfully initialized new page object and opened url: https://lps.alvexo.ae/discover-the-stock-test</msg>
+<msg timestamp="20220813 13:42:09.484" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<status status="PASS" starttime="20220813 13:42:05.519" endtime="20220813 13:42:09.484"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=.h2-desktop</arg>
+<arg>==</arg>
+<arg>امُؤسس يتميز بتركيزه</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220813 13:42:09.484" endtime="20220813 13:42:09.519"/>
+</kw>
+<status status="PASS" starttime="20220813 13:42:05.517" endtime="20220813 13:42:09.519"/>
+</test>
+<test id="s1-t2" name="Fulfill form" line="12">
+<kw name="Type Text" library="Browser">
+<arg>xpath=//input[@name="FirstName"]</arg>
+<arg>Ian</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220813 13:42:09.546" level="INFO">Types the text 'Ian' in the given field.</msg>
+<msg timestamp="20220813 13:42:09.554" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220813 13:42:09.556" level="FAIL">Error: Could not find active page</msg>
+<status status="FAIL" starttime="20220813 13:42:09.546" endtime="20220813 13:42:09.558"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>xpath=//input[@name="Email"]</arg>
+<arg>Ian@m.co</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220813 13:42:09.558" endtime="20220813 13:42:09.558"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>xpath=//input[@name="PhoneCountryCode"]</arg>
+<arg>1998993344</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220813 13:42:09.558" endtime="20220813 13:42:09.559"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220813 13:42:09.559" endtime="20220813 13:42:09.559"/>
+</kw>
+<status status="FAIL" starttime="20220813 13:42:09.543" endtime="20220813 13:42:09.559">Error: Could not find active page</status>
+</test>
+<status status="FAIL" starttime="20220813 13:42:04.797" endtime="20220813 13:42:09.562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Ex3">Ex3</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220813 13:42:09.554" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+</errors>
+</robot>
