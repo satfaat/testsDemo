@@ -9,6 +9,13 @@ screenshot/
 tmp_screenshot/
 .venv*
 .env*
+#javascript
+node_modules
+package.json
+pnpm-lock.yaml
+playwright.config.js
+js-cypress/node_modules
+*.config.js
 
 
 
