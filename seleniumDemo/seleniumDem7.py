@@ -5,8 +5,10 @@ from selenium import webdriver
 
 link = 'http://suninjuly.github.io/alert_accept.html'
 
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+
+def calc(x) -> str:
+    return str(math.log(abs(12*math.sin(int(x)))))
+
 
 with webdriver.Firefox() as browser:
     browser.get(link)
@@ -27,4 +29,3 @@ with webdriver.Firefox() as browser:
         new_window = browser.window_handles[1]
         first_window = browser.window_handles[0]
         current_window = browser.current_window_handle
-    

@@ -5,7 +5,7 @@ from selenium import webdriver
 
 link = 'http://suninjuly.github.io/get_attribute.html'
 
-def calc(x):
+def calc(x) -> str:
   return str(math.log(abs(12*math.sin(int(x)))))  # ln(abs(12*sin(x)))
 
 with webdriver.Firefox() as browser:

@@ -5,8 +5,10 @@ from selenium import webdriver
 
 link = 'http://suninjuly.github.io/redirect_accept.html'
 
-def calc(x):
+
+def calc(x) -> str:
     return str(math.log(abs(12*math.sin(int(x)))))
+
 
 with webdriver.Firefox() as browser:
     browser.get(link)
@@ -18,7 +20,7 @@ with webdriver.Firefox() as browser:
     time.sleep(2)
 
     x = browser.find_element_by_id('input_value').text
-    answer = calc(x)
+    answer: str = calc(x)
     browser.find_element_by_id('answer').send_keys(answer)
 
     browser.find_element_by_class_name('btn-primary').click()

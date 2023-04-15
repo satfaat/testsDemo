@@ -1,10 +1,12 @@
-import httpx, re, json
+import httpx
+import re
+import json
 
 URL_JSPLACEHOLDER = "https://jsonplaceholder.typicode.com/"
 
-endpoints = {
+endpoints: dict[str, str] = {
     'posts': 'posts'
-} 
+}
 
 
 def get_res(endpoint, auth=None):
@@ -15,5 +17,5 @@ def get_res(endpoint, auth=None):
 
 res = get_res(endpoints.get("posts"))
 
-#print(res.json())
+# print(res.json())
 assert res.status_code == 200

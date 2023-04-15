@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-#link = 'http://suninjuly.github.io/cats.html'
+# link = 'http://suninjuly.github.io/cats.html'
 link = 'http://suninjuly.github.io/wait2.html'
 
 with webdriver.Firefox() as browser:
@@ -26,9 +26,8 @@ with webdriver.Firefox() as browser:
     assert "successful" in message.text
 
     # говорим WebDriver искать каждый элемент в течение 5 секунд
-    #browser.implicitly_wait(5)
-    #browser.find_element_by_id("button") 
-    
+    # browser.implicitly_wait(5)
+    # browser.find_element_by_id("button")
 
     if False:
         browser.get("http://suninjuly.github.io/wait1.html")

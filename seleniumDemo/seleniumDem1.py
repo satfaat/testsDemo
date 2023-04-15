@@ -13,7 +13,7 @@ links = {
 }
 
 with webdriver.Firefox() as browser:
-    #wait = WebDriverWait(browser, 10)
+    # wait = WebDriverWait(browser, 10)
     browser.get(links['link_5'])
 
     input1 = browser.find_element_by_tag_name('input')
@@ -39,14 +39,15 @@ with webdriver.Firefox() as browser:
         time.sleep(5)
 
         # Найдем кнопку, которая отправляет введенное решение
-        submit_button = browser.find_element_by_css_selector(".submit-submission")
+        submit_button = browser.find_element_by_css_selector(
+            ".submit-submission")
 
         # Скажем драйверу, что нужно нажать на кнопку. После этой команды мы должны увидеть сообщение о правильном ответе
         submit_button.click()
         time.sleep(5)
 
-        #button = browser.find_element_by_id("submit_button")
-        #button = browser.find_element(By.ID, "submit_button")
+        # button = browser.find_element_by_id("submit_button")
+        # button = browser.find_element(By.ID, "submit_button")
 
     elif False:
         browser.get("https://fake-shop.com/book1.html")
@@ -87,7 +88,7 @@ with webdriver.Firefox() as browser:
 
         button = browser.find_element_by_css_selector("button.btn")
         button.click()
-    
+
     elif False:
         elements = browser.find_elements_by_tag_name('input')
         for element in elements:

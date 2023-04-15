@@ -5,8 +5,10 @@ from selenium import webdriver
 
 link = 'http://suninjuly.github.io/math.html'
 
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+
+def calc(x) -> str:
+    return str(math.log(abs(12*math.sin(int(x)))))
+
 
 with webdriver.Firefox() as browser:
     browser.get(link)
@@ -15,7 +17,7 @@ with webdriver.Firefox() as browser:
     people_checked = people_radio.get_attribute("checked")
     print("value of people radio: ", people_checked)
     assert people_checked is not None, "People radio is not selected by default"
-    #assert people_checked == "true", "People radio is not selected by default"
+    # assert people_checked == "true", "People radio is not selected by default"
 
     robots_radio = browser.find_element_by_id("robotsRule")
     robots_checked = robots_radio.get_attribute("checked")
@@ -24,7 +26,7 @@ with webdriver.Firefox() as browser:
 
     x_element = browser.find_element_by_id('input_value')
     x = x_element.text
-    y = calc(x)
+    y: str = calc(x)
 
     answer = browser.find_element_by_id('answer')
     answer.send_keys(y)

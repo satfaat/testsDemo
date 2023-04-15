@@ -3,15 +3,15 @@ import time
 
 from selenium import webdriver
 
-#current_dir = os.path.abspath(os.path.dirname(__file__))    # получаем путь к директории текущего исполняемого файла 
-#file_path = os.path.join(current_dir, 'file.txt')           # добавляем к этому пути имя файла 
-#element.send_keys(file_path)
+# current_dir = os.path.abspath(os.path.dirname(__file__))    # получаем путь к директории текущего исполняемого файла
+# file_path = os.path.join(current_dir, 'file.txt')           # добавляем к этому пути имя файла
+# element.send_keys(file_path)
 
-#print('ex_1:', os.path.abspath(__file__))
-#print('ex_2:', os.path.abspath(os.path.dirname(__file__)))
+# print('ex_1:', os.path.abspath(__file__))
+# print('ex_2:', os.path.abspath(os.path.dirname(__file__)))
 
 link = 'http://suninjuly.github.io/file_input.html'
-current_dir = os.path.abspath(os.path.dirname(__file__))
+current_dir: str = os.path.abspath(os.path.dirname(__file__))
 
 with webdriver.Firefox() as browser:
     browser.get(link)
@@ -24,10 +24,10 @@ with webdriver.Firefox() as browser:
 
     email = browser.find_element_by_name('email')
     email.send_keys('1@mail.ru')
-    
+
     file_name = 'file.txt'
-    file_path = os.path.join(current_dir, file_name)
-    #downloading = browser.find_element(By.CSS_SELECTOR, "[type='file']")
+    file_path: str = os.path.join(current_dir, file_name)
+    # downloading = browser.find_element(By.CSS_SELECTOR, "[type='file']")
     downloading = browser.find_element_by_name('file')
     downloading.send_keys(file_path)
 
