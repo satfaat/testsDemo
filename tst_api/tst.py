@@ -13,13 +13,13 @@ username_50 = {
 }
 #print(len(username_50['username']))
 
-username_32 = {
+username_32: dict[str, str] = {
     "username": "ivanaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "password1": "12345678912345678912",
     "password2": "12345678912345678912"
 }
 
-def create_user(api, json):
+def create_user(api, json) -> None:
     res = requests.post(api, json=json)
     print(f'TEXT: {res.text}')
     print(f'JSON: {res.json}')

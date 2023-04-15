@@ -1,15 +1,15 @@
-def search(needle, haystack):
+def search(needle, haystack) -> int:
     left = 0
-    right = len(haystack) - 1
+    right: int = len(haystack) - 1
 
     while left <= right:
-        middle = left + (right - left) // 2
+        middle: int = left + (right - left) // 2
         middle_element = haystack[middle]
         if middle_element == needle:
             return middle
         elif middle_element < needle:
             #left = middle
-            left = middle + 1
+            left: int = middle + 1
         else:
             #right = middle
             right = middle - 1
@@ -27,7 +27,7 @@ def search(needle, haystack):
 #     assert search(4, [1, 2, 3, 4]) == 3, \
 #         'search last element'
 
-def test_exception_not_found():
+def test_exception_not_found() -> None:
     from pytest import raises
 
     with raises(ValueError, message="left out of bound"):

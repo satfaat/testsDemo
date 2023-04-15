@@ -1,4 +1,4 @@
-# prj.name = test.py
+- prj.name = aoutotests, framework collection for testing
 
 ## start
     ```bash

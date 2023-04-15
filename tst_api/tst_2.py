@@ -2,52 +2,52 @@ import requests
 import json
  
 
-username_50 = {
+username_50: dict[str, str] = {
     "username": "ivanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "password1": "12345678912345678912",
     "password2": "12345678912345678912"
 }
 
-username_32 = {
+username_32: dict[str, str] = {
     "username": "ivanaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "password1": "12345678912345678912",
     "password2": "12345678912345678912"
 }
 
-login_32 = {
+login_32: dict[str, str] = {
     "username": username_32["username"],
     "password": username_32["password1"]
 }
 
 #memo_status_ids = ['TODO', 'INPROGRESS', 'DONE', 'CANCELED']
-memo_todo = {
+memo_todo: dict[str, str] = {
     'text': 'Some text',
     'status': 'TODO'
 }
 
-memo_inprogress = {
+memo_inprogress: dict[str, str] = {
     'text': 'Some text',
     'status': 'INPROGRESS'
 }
 
-memo_done = {
+memo_done: dict[str, str] = {
     'text': 'Some text',
     'status': 'DONE'
 }
 
-memo_canceled = {
+memo_canceled: dict[str, str] = {
     'text': 'Some text',
     'status': 'CANCELED'
 }
 
 server = 'http://bzteltestapi.pythonanywhere.com/'
-apis = {
+apis: dict[str, str] = {
     'users': server + 'users',
     'todos': server + f"todos/{username_32.get('username')}/{1}",
     'login': server + 'login'
 }
 
-def create_user(url_api, json):
+def create_user(url_api, json) -> None:
     res = requests.post(url_api, json=json)
     print(f'TEXT: {res.text}')
     print(f'JSON: {res.json}')
@@ -55,7 +55,7 @@ def create_user(url_api, json):
         print(res.raise_for_status())
     print(res.text)
 
-def update_password(url_api, json):
+def update_password(url_api, json) -> None:
     res = requests.put(url_api, json=json)
     print(f'TEXT: {res.text}')
     print(f'JSON: {res.json}')
@@ -63,14 +63,14 @@ def update_password(url_api, json):
         print(res.raise_for_status())
     print(res.text)
 
-def get_token(url_api, json):
+def get_token(url_api, json) -> str:
     res = requests.post(url_api, json=json)
     if res.status_code !=200:
         print(res.raise_for_status())
     return res.text
 
 token = json.loads(get_token(url_api=apis['login'], json=login_32))
-def create_memo(url_api, json, token):
+def create_memo(url_api, json, token) -> None:
     res = requests.post(
         url_api, 
         json=json, 
