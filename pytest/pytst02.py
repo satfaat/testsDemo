@@ -7,7 +7,7 @@ link = "http://selenium1py.pythonanywhere.com/"
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
-    browser = webdriver.Chrome()
+    browser = webdriver.Edge()
     yield browser
     print("\nquit browser..")
     browser.quit()

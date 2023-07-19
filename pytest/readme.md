@@ -10,4 +10,6 @@ allure serve
 # or
 allure generate
 
+# pytest-elenium
+pytest --driver Firefox
 ```
