@@ -1,7 +1,0 @@
-httpx
-pydantic
-jsonschema
-pytest
-allure-pytest
-python-dotenv
-autopep8
